@@ -2,10 +2,10 @@
 
 ## Project 1: Restaurant Webpage
 
-#### Home page
-#### About Us
+#### Home Page
+#### Our Story
 #### Menu
 #### Gallery
-#### Online Order
-#### Reservations
+#### Events
+#### Press
 #### Contact Us
