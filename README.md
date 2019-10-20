@@ -1,6 +1,7 @@
-# comp20group
+# Web Programming Group Projects
 
 ## Project 1: Restaurant Webpage
+
 #### Home page
 #### About Us
 #### Menu
