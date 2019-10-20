@@ -7,5 +7,5 @@
 #### Menu
 #### Gallery
 #### Online Order
-#### Reservations
+#### Press
 #### Contact Us
