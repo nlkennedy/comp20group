@@ -1,20 +1,23 @@
 <!doctype html>
 <html>
 <head>
+<link href="https://fonts.googleapis.com/css?family=Flamenco&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Asap&display=swap" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <meta charset="utf-8">
-<title>ben & jerry's</title>
+
+<title>jen & berry's</title>
   <style>
     html,body { height:100%; }
     .column1 {
       float: left;
-      width: 42%;
+      width: 32%;
       margin-left: 3%;
       height: 530px;
     }
     .column2 {
       float: left;
-      width: 52%;
+      width: 62%;
       margin-right: 3%;
       height: 530px;
     }
@@ -23,22 +26,41 @@
       display: table;
       clear: both;
     }
+    .parallax { 
+      background-image: url("https://images.unsplash.com/photo-1536351425844-145ebdae32d8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60");
 
+      height: 100%;
+      background-image: opacity: 0.2;
+
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
   </style>
 </head>
-<body>
-<h2 style="font-family: Bookman Old Style; color: black;font-size: 60px; text-align: center">
-welcome to jen & berry's
-</h2>
 
-<div class="row">
-  <div class="column1" style="background-color: #ffe6ff">
-    <img src = "https://images.unsplash.com/photo-1536351425844-145ebdae32d8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60" style="height: 100%; width: 100%">
+<body>
+  <div class="parallax">
+    <h2 style="font-family: 'Flamenco'; color: white; text-decoration: underline; font-size: 90px; background-color: #e699ff; text-align: center; opacity: 0.9">
+      
+    welcome to jen & berry's
+
+    </h2>
+
+    <div class="row">
+      <div class="column1">
+        <img src = "https://images.unsplash.com/photo-1555529211-3237f6e13d33?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=947&q=80" style="height: 100%; width: 100%; ">
+      </div>
+      <div class="column2" style="background-color: #ffb3e6; opacity: 0.92">
+        <br \>
+        <h3 style="font-family: 'Flamenco'; color: white;font-size: 75px; text-align: center">
+        PICK A CONE</h3>
+        <h4 style="font-family: 'Flamenco'; color: white;font-size: 40px; text-align: center; padding-left:3%; padding-right: 3%"> We offer a variety
+        of treats, each made from the highest quality ingredients sourced from all over the globe.
+        There's something special in every cup, cone, and bite. </h4>
+      </div>
+    </div>
   </div>
-  <div class="column2" style="background-color: #D5FFD5">
-   <!--  <h3> Responsibly-sourced, organic ice cream.</h3>
-    <h4> Good for the planet and the soul. </h4> -->
-  </div>
-</div>
 
 </body>
