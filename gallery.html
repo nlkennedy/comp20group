@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Gallery</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-family: 'Asap', sans-serif;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Flamenco', cursive;
+        }
+
+        body {
+            text-align: center;
+            box-sizing: border-box;
+            padding-left: 6% !important;
+            padding-right: 6% !important;
+            background-color: #F78888;
+        }
+
+        .gal_img {
+            width: 100%;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+        
+        .column {
+            float: left;
+            width: 33.333333%;
+            padding: 0 8px;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .prev {
+            float: left;
+            padding-left: 8px;
+        }
+
+        .next {
+            float: right;
+            padding-right: 8px;
+        }
+
+        .arrow {
+            font-size: 200%;
+            cursor: pointer;
+            margin: 1%;
+            padding: 1%;
+            color: white;
+            box-sizing: border-box;
+            margin-top: -5%px;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.5);
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Flamenco&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Asap&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script language="javascript" src="gallery.js"></script>
+</head>
+<body>
+    <h1>Gallery</h1>
+    <p>Click the arrows below to rotate images.</p>
+    
+    <div class="row">
+        <div class="column">
+            <img id="0" class="gal_img" src="">
+        </div>
+        <div class="column">
+            <img id="1" class="gal_img" src="">
+        </div>    
+        <div class="column">
+            <img id="2" class="gal_img cover" src="">
+        </div>
+    </div>
+
+    <div class="arrows">
+        <a class="arrow prev" onclick="move_slide(-1)">&#10094;</a>
+        <a class="arrow next" onclick="move_slide(1)">&#10095;</a>
+    </div>
+    <p id="num"></p>
+</body>
+</html>
