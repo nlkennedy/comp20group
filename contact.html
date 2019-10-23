@@ -1,0 +1,211 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Contact</title>
+    <style>
+        body {
+            text-align: center;
+            box-sizing: border-box;
+            background-color: #90ccf4;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .col {
+            float: left;
+            padding-right: 1%;
+            padding-left: 1%;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+
+        .col-25 {
+            width: 25%;
+        }
+
+        .col-50 {
+            width: 50%;
+        }
+        
+        .col-100 {
+            width: 100%;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .form_container {
+            border-style: solid;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            padding: 2%;
+            background-color: #ececec;
+            border-color: #5DA2D5;
+            border-radius: 5px;
+            margin-bottom: 5%;
+        }
+
+        textarea, input {
+            width: 100%;
+            margin-top: 5px;
+            margin-bottom: 20px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: none;
+        }
+
+        .button {
+            background-color: #5DA2D5;
+            width: 30%;
+            padding-top: 2%;
+            padding-bottom: 2%;
+            border-radius: 4px;
+            cursor: pointer;
+            font-family: 'Flamenco', cursive;
+            font-size: 110%;
+            font-weight: bold;
+            border-color: #000000;
+        }
+
+        .button:hover {
+            background-color: rgba(93, 161, 213, 0.808);
+        }
+
+        .label {
+            text-align: left;
+        }
+
+        .date {
+            margin-bottom: 4%;
+            font-size: 80%;
+        }
+
+        #message {
+            border-style: solid;
+            border-color: #5DA2D5;
+            display: none;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            padding: 2%;
+            background-color: #ececec;
+            border-color: #5DA2D5;
+            border-radius: 5px;
+            margin-bottom: 2%;
+            color: #000000;
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Flamenco&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Asap&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1>Contact</h1>
+    <p>
+        Contact us to book an event, order catering, or send feedback! </br>
+        Use the form below to send us an email, or give us a call: </br>
+        33-ICE-CREAM
+    </p>
+
+    <p id="message"></p>
+
+    <div class="form_container">
+        <form>
+            <div class="row">
+                <div class="col col-50 label" required>First Name*</div>
+                <div class="col col-50 label">Last Name*</div>
+            </div>
+            <div class="row">
+                <div class="col col-50">
+                    <input type="text" id="first" name="first">
+                </div>
+                <div class="col col-50">
+                    <input type="text" id="last" name="last">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col col-100 label">Phone Number*</div>
+            </div>
+            <div class="row">
+                <div class="col col-100">
+                    <input type="text" id="phone" name="phone">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col col-100 label">Email*</div>
+            </div>
+            <div class="row">
+                <div class="col col-100">
+                    <input type="text" id="email" name="email">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col col-100 label">Message*</div>
+            </div>
+                
+            <div class="row">
+                <div class="col col-100">
+                    <textarea type="text" id="comments" name="comments"></textarea>
+                </div>
+            </div>
+
+            <div class="row">
+                <input class="button" type="button" onclick="submit_event()" value="Send Message"></input>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function submit_event() {
+            if (validate_form()) {
+                form = document.forms[0];
+                message = `Hello ` + form["first"].value + ` ` + form["last"].value + `, </br>
+                    Thank you for your email! </br>
+                    We will follow up with you shortly.
+                `;
+
+                $("#message").html(message);
+                $("#message").show();
+                $('html,body').scrollTop(0);
+                document.forms[0].reset();
+            }
+        }
+
+        function validate_form() {
+            fields = ["first", "last", "phone", "email", "comments"];
+            field_labels = ["First Name", "Last Name", "Phone Number", "Email", "Message"];
+            form = document.forms[0];
+            empty = new Array;
+
+            for (i in fields) {
+                if (form[fields[i]].value == "") {
+                    empty.push(field_labels[i]);
+                }
+            }
+
+            if (empty.length > 0) {
+                $('html,body').scrollTop(0);
+                message = "Please fill out these fields: \n" + empty.join(", ");                
+                alert(message);
+                return false;
+            } else {
+                return true;
+            }
+        }
+    </script>
+</body>
+</html>
