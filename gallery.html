@@ -20,12 +20,12 @@
         body {
             text-align: center;
             box-sizing: border-box;
-            background-color: #F78888;
+            color: #ffffff;
         }
 
         #gallery {
-            padding-right: 25%;
-            padding-left: 25%;
+            padding-right: 15%;
+            padding-left: 15%;
         }
 
         .gal_img {
@@ -112,12 +112,13 @@
                 <img id="2" class="gal_img cover" src="">
             </div>
         </div>
+    
+        <div class="arrows">
+            <a class="arrow prev" onclick="move_slide(-1)">&#10094;</a>
+            <a class="arrow next" onclick="move_slide(1)">&#10095;</a>
+        </div>
+        <p id="num"></p>
     </div>
 
-    <div class="arrows">
-        <a class="arrow prev" onclick="move_slide(-1)">&#10094;</a>
-        <a class="arrow next" onclick="move_slide(1)">&#10095;</a>
-    </div>
-    <p id="num"></p>
 </body>
 </html>
