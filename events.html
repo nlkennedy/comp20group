@@ -7,19 +7,105 @@
 <meta charset="utf-8">
 
 <title>jen & berry's</title>
+  <style>
+    .container {
+      position: relative;
+      width: 50%;
+    }
+
+    #bookclass {
+      height: 250px;
+      width: auto;
+      padding-left: 10%;
+    }
+
+    .btn1 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      background-color: #e699ff;
+      color: white;
+      font-size: 16px;
+      padding: 12px 24px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+   .btn2 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-400%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      background-color: #e699ff;
+      color: white;
+      font-size: 16px;
+      padding: 12px 24px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+   .btn3 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(245%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      background-color: #e699ff;
+      color: white;
+      font-size: 16px;
+      padding: 12px 24px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .btn: hover {
+      background-color: #ac00e6;
+    }
+
+    .column {
+      float: left;
+      width: 33.33%;
+    }
+
+    .row: after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+  </style>
 </head>
 
 <body>
   <div class="parallax" >
     <h2 style="font-family: 'Flamenco'; color: white; text-decoration: underline; font-size: 90px; background-color: #e699ff; text-align: center; opacity: 0.9">
-    book an event
+    events
     </h2>
-    <div class="container">
-      <img id="bookclass" src="https://images.unsplash.com/photo-1501443762994-82bd5dace89a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80">
-      <button class=btn>Book a class</button>
+
+    <div class="row">
+      <div class="column">
+        <img id="bookclass" src="https://images.unsplash.com/photo-1501443762994-82bd5dace89a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80">
+        <button class=btn1>Book Classes</button>
+      </div>
+      <div class="column">
+        <img id="bookclass" src="https://images.unsplash.com/photo-1511559714511-3181c09c1cb0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80">
+        <button class=btn2>On-the-Go</button>
+      </div>
+      <div class="column">
+        <img id="bookclass" src="https://images.unsplash.com/photo-1501443762994-82bd5dace89a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80">
+        <button class=btn3>Birthday Parties</button>
+      </div>
     </div>
 
   </div>
+
+
 
   <!-- do classes, birthday parties, after hours space bookings -->
 
