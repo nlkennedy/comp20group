@@ -3,7 +3,10 @@
 <head>
 <link href="https://fonts.googleapis.com/css?family=Flamenco&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Asap&display=swap" rel="stylesheet">
+ <link rel="stylesheet" type="text/css" href="style.css">
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
 <meta charset="utf-8">
 
 <title>jen & berry's</title>
@@ -37,16 +40,51 @@
       background-repeat: no-repeat;
       background-size: 100%;
     }
+
+    /* nav bar and search button styling*/
+    nav {background-color: #e699ff; padding: 15px 0px;}
+    nav a {color: #000; font-size: 19px; text-decoration: none;}
+    nav ul {list-style-type:none;}
+    nav ul li {display: inline-block; padding: 10px 25px 10px 25px; line-height: 2; font-family: 'Flamenco'; font-size: 14pt;}
+    .button {background-color: #000; color: #fff; display: inline-block; padding: 4px 15px; border: none;}
+	#center-menu{
+		text-align: center; 
+		vertical-align: center;
+	}
+
+
   </style>
 </head>
 
 <body>
   <div class="parallax">
+
+	<!--  nav bar and search button -->	
+	<nav id="center-menu">
+		<ul>
+			<li><a style="font-weight: bold" href="index.html">HOME</a></li>
+			<li><a href="events.html">EVENTS </a></li>
+			<li><a href="gallery.html">GALLERY</a></li>
+			<li><a href="menu.html">MENU</a></li>
+			<li><a href="press.html">PRESS</a></li>
+			<li><a href="ourstory.html">OUR STORY</a></li>
+			<li><a href="contactus.html">CONTACT US</a></li>
+			<li>
+				<form>
+					<input type='text' name='search' placeholder="Find your flavor...">
+					<input class= 'button' type='submit' value="Go!" >
+				</form>
+			</li>
+		</ul>
+	</nav>
+
+
     <h2 style="font-family: 'Flamenco'; color: white; text-decoration: underline; font-size: 90px; background-color: #e699ff; text-align: center; opacity: 0.9">
       
     welcome to jen & berry's
 
     </h2>
+
 
     <div class="row">
       <div class="column1">
