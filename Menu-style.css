@@ -1,0 +1,188 @@
+body {
+  background-color: #FFC2C8;
+}
+h1 {
+    color: #fff;
+    font-family: 'Flamenco', cursive;
+    text-align: center;
+    font-size: 64px;
+    }
+
+h2 {
+    color: #FC4A1A;
+    font-family: 'Flamenco', cursive;
+    font-size: 24px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+h3 {
+    color: #FC4A1A;
+    font-family: 'Flamenco', cursive;
+    font-size: 42px;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom:10px;
+}
+
+h4 {
+  text-align: center;
+  font-family: 'Asap', sans-serif;
+  font-size: 24px;
+  color: #FC4A1A;
+  margin-top:10px;
+}
+
+h5 {
+  color: #4ABDAC;
+  font-family: 'Asap', sans-serif;
+  font-size: 30px;
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-bottom:10px;
+
+}
+
+p {
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: 'Asap', sans-serif;
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+}
+
+img {
+  padding-top: 50px;
+  width: 50%;
+  height: auto;
+}
+
+hr {
+  width: 800px;
+  height: 3px;
+  border: none;
+  background-color: #F7B733;
+}
+
+textarea {
+  font-family: 'Asap', sans-serif;
+  font-size: 18px;
+}
+
+#menu {
+  position:relative;
+  width: 1000px;
+  height:57px;
+  margin-left: 150px;
+}
+
+#container
+{
+  display: block; 
+  height:auto;
+  position: relative;
+  margin-left: 200px;
+  margin-right: 200px; 
+  background-color: #fff;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.column {
+  float: left;
+  width: 33.333333%;
+  padding: 0 8px;
+}
+
+.row {
+  margin: auto;
+  content: "";
+  display: table;
+  clear: both;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.button {
+  background-color: #F7B733;; /* Orange */
+  border: solid;
+  border-color: #4ABDAC; /*blue*/
+  color: #fff;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.button a:hover {
+  background-color: #4ABDAC; /* blue */
+}
+
+.button:hover {
+    background-color: #4ABDAC; /* blue */
+}
+
+.button-active {
+  background-color: #4ABDAC;; /* blue */
+  border: solid;
+  border-color: #4ABDAC; /*blue*/
+  color: #fff;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.div-right {
+  width: 500px;
+  float: right;
+}
+
+.div-left {
+  width: 500px;
+  float: left;
+}
+
+.center-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+.submit-button {
+  padding: 10px 15px 11px;
+  font-size: 18px;
+  background-color: #FC4A1A;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 5px;
+  border: 1px solid #57D6C7;
+  cursor: pointer;
+  width: 125px;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+}
+
+
+
+
+
+
+
+
