@@ -20,13 +20,17 @@
         body {
             text-align: center;
             box-sizing: border-box;
-            padding-left: 6% !important;
-            padding-right: 6% !important;
             background-color: #F78888;
+        }
+
+        #gallery {
+            padding-right: 25%;
+            padding-left: 25%;
         }
 
         .gal_img {
             width: 100%;
+            padding: 10%;
         }
 
         * {
@@ -99,15 +103,17 @@
     <h1>Gallery</h1>
     <p>Click the arrows below to rotate images.</p>
     
-    <div class="row">
-        <div class="column">
-            <img id="0" class="gal_img" src="">
-        </div>
-        <div class="column">
-            <img id="1" class="gal_img" src="">
-        </div>    
-        <div class="column">
-            <img id="2" class="gal_img cover" src="">
+    <div id="gallery">
+        <div class="row">
+            <div class="column">
+                <img id="0" class="gal_img" src="">
+            </div>
+            <div class="column">
+                <img id="1" class="gal_img" src="">
+            </div>    
+            <div class="column">
+                <img id="2" class="gal_img cover" src="">
+            </div>
         </div>
     </div>
 
