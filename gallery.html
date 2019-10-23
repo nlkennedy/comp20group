@@ -24,13 +24,13 @@
         }
 
         #gallery {
-            padding-right: 15%;
-            padding-left: 15%;
+            padding-right: 10%;
+            padding-left: 10%;
         }
 
         .gal_img {
             width: 100%;
-            padding: 10%;
+            padding: 2%;
         }
 
         * {
@@ -39,8 +39,15 @@
         
         .column {
             float: left;
-            width: 33.333333%;
             padding: 0 8px;
+        }
+
+        .col-sm {
+            width: 5%;
+        }
+
+        .col-lg {
+            width: 30%;
         }
 
         .row:after {
@@ -50,28 +57,37 @@
         }
 
         .prev {
-            float: left;
+            float: right;
             padding-left: 8px;
         }
 
         .next {
-            float: right;
+            float: left;
             padding-right: 8px;
         }
 
         .arrow {
-            font-size: 200%;
+            font-size: 400%;
             cursor: pointer;
-            margin: 1%;
-            padding: 1%;
+            /* margin: 1%; */
+            padding: 30%;
             color: white;
             box-sizing: border-box;
-            margin-top: -5%px;
+            margin-top: 500%;
+            /* display: inline-block; */
+            /* margin-top: 50%; */
+            /* margin-top: -5%px; */
+            /* vertical-align: middle; */
         }
 
         .prev:hover, .next:hover {
             background-color: rgba(0,0,0,0.5);
         }
+
+        .caption {
+            visibility: hidden;
+        }
+
     </style>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="styles.css">
@@ -100,23 +116,30 @@
     
     <div id="gallery">
         <div class="row">
-            <div class="column">
-                <img id="0" class="gal_img" src="">
+            <div class="column col-sm">
+                <a class="arrow prev" onclick="move_slide(-1)">&#10094;</a>
             </div>
-            <div class="column">
+            <div class="column col-lg">
+                <img id="0" class="gal_img" src="">
+                <div id="cap0" class="caption"></div>
+            </div>
+            <div class="column col-lg">
                 <img id="1" class="gal_img" src="">
+                <div id="cap1" class="caption"></div>
             </div>    
-            <div class="column">
+            <div class="column col-lg">
                 <img id="2" class="gal_img cover" src="">
+                <div id="cap2" class="caption"></div>
+            </div>
+            <div class="column col-sm">
+                <a class="arrow next" onclick="move_slide(1)">&#10095;</a>
             </div>
         </div>
     
-        <div class="arrows">
-            <a class="arrow prev" onclick="move_slide(-1)">&#10094;</a>
-            <a class="arrow next" onclick="move_slide(1)">&#10095;</a>
-        </div>
         <p id="num"></p>
     </div>
+
+    </br>
 
 </body>
 </html>
