@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Contact</title>
     <style>
         html, body {
@@ -74,7 +75,7 @@
             resize: none;
         }
 
-        .button {
+        .button_contact {
             background-color: #5DA2D5;
             width: 30%;
             padding-top: 2%;
@@ -87,7 +88,7 @@
             border-color: #000000;
         }
 
-        .button:hover {
+        .button_contact:hover {
             background-color: rgba(93, 161, 213, 0.808);
         }
 
@@ -122,6 +123,25 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
+     <!--  nav bar and search button --> 
+  <nav id="center-menu">
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="events.html">EVENTS </a></li>
+      <li><a href="gallery.html">GALLERY</a></li>
+      <li><a href="menu.html">MENU</a></li>
+      <li><a href="press.html">PRESS</a></li>
+      <li><a href="ourstory.html">OUR STORY</a></li>
+      <li><a href="contact.html">CONTACT US</a></li>
+      <li>
+        <form>
+          <input type='text' name='search' placeholder="Find your flavor...">
+          <input class= 'button' type='submit' value="Go!" >
+        </form>
+      </li>
+    </ul>
+  </nav>
+
     <h1>Contact</h1>
     <p>
         Contact us to book an event, order catering, or send feedback! </br>
@@ -175,7 +195,7 @@
             </div>
 
             <div class="row">
-                <input class="button" type="button" onclick="submit_event()" value="Send Message"></input>
+                <input class="button_contact" type="button" onclick="submit_event()" value="Send Message"></input>
             </div>
         </form>
     </div>
