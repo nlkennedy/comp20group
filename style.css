@@ -1,0 +1,43 @@
+    html,body { height:100%; }
+    .container {
+      position: relative;
+      width: 50%;
+    }
+
+    #bookclass {
+      height: 250px;
+      width: auto;
+      padding-left: 10%;
+    }
+
+    .container img {
+      width: 100%;
+      height: auto;
+    }
+
+    .container .btn {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-110%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      background-color: #e699ff;
+      color: white;
+      font-size: 16px;
+      padding: 12px 24px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .container .btn:hover {
+      background-color: black;
+    }
+    .parallax { 
+      height: 100%;
+
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
