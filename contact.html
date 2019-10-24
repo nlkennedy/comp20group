@@ -25,33 +25,6 @@
             box-sizing: border-box;
         }
 
-        .col {
-            float: left;
-            padding-right: 1%;
-            padding-left: 1%;
-            margin-left: auto;
-            margin-right: auto;
-            display: block;
-        }
-
-        .col-25 {
-            width: 25%;
-        }
-
-        .col-50 {
-            width: 50%;
-        }
-        
-        .col-100 {
-            width: 100%;
-        }
-
-        .row:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-
         .form_container {
             border-style: solid;
             margin-left: auto;
@@ -64,7 +37,7 @@
             margin-bottom: 5%;
         }
 
-        textarea, input {
+        textarea, select, input {
             width: 100%;
             margin-top: 5px;
             margin-bottom: 20px;
@@ -72,6 +45,12 @@
             border: 2px solid #FED273;
             border-radius: 4px;
             resize: none;
+            font-size: 15px;
+        }
+
+        .dropdown {
+            font-size: 15px;
+            background-color: #ffffff;
         }
 
         .button_contact {
@@ -95,11 +74,6 @@
             text-align: left;
         }
 
-        .date {
-            margin-bottom: 4%;
-            font-size: 80%;
-        }
-
         #message {
             border-style: solid;
             border-color: #5DA2D5;
@@ -116,7 +90,6 @@
         }
     </style>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Flamenco&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Asap&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -151,50 +124,27 @@
 
     <div class="form_container">
         <form>
-            <div class="row">
-                <div class="col col-50 label" required>First Name*</div>
-                <div class="col col-50 label">Last Name*</div>
-            </div>
-            <div class="row">
-                <div class="col col-50">
-                    <input type="text" id="first" name="first">
-                </div>
-                <div class="col col-50">
-                    <input type="text" id="last" name="last">
-                </div>
-            </div>
+            <div class="label">Subject</div>
+            <select class="dropdown" name="subject">
+                <option value="general">General</option>
+                <option value="class">Book a Class</option>
+                <option value="event">Schedule an Event</option>
+                <option value="catering">Order Catering</option>
+            </select>
 
-            <div class="row">
-                <div class="col col-100 label">Phone Number*</div>
-            </div>
-            <div class="row">
-                <div class="col col-100">
-                    <input type="text" id="phone" name="phone">
-                </div>
-            </div>
+            <div class="label">Name*</div>
+            <input type="text" id="name" name="name">
 
-            <div class="row">
-                <div class="col col-100 label">Email*</div>
-            </div>
-            <div class="row">
-                <div class="col col-100">
-                    <input type="text" id="email" name="email">
-                </div>
-            </div>
+            <div class="label">Phone Number*</div>
+            <input type="text" id="phone" name="phone">
 
-            <div class="row">
-                <div class="col col-100 label">Message*</div>
-            </div>
-                
-            <div class="row">
-                <div class="col col-100">
-                    <textarea type="text" id="comments" name="comments"></textarea>
-                </div>
-            </div>
+            <div class="label">Email*</div>
+            <input type="text" id="email" name="email">
 
-            <div class="row">
-                <input class="button_contact" type="button" onclick="submit_event()" value="Send Message"></input>
-            </div>
+            <div class="label">Message*</div>
+            <textarea rows="7" type="text" id="comments" name="comments"></textarea>
+
+            <input class="button_contact" type="button" onclick="submit_event()" value="Send Message"></input>
         </form>
     </div>
 
@@ -202,7 +152,7 @@
         function submit_event() {
             if (validate_form()) {
                 form = document.forms[0];
-                message = `Hello ` + form["first"].value + ` ` + form["last"].value + `, </br>
+                message = `Hello ` + form["name"].value + `, </br>
                     Thank you for your email! </br>
                     We will follow up with you shortly.
                 `;
@@ -215,8 +165,8 @@
         }
 
         function validate_form() {
-            fields = ["first", "last", "phone", "email", "comments"];
-            field_labels = ["First Name", "Last Name", "Phone Number", "Email", "Message"];
+            fields = ["name", "phone", "email", "comments"];
+            field_labels = ["Name", "Phone Number", "Email", "Message"];
             form = document.forms[0];
             empty = new Array;
 
@@ -227,7 +177,6 @@
             }
 
             if (empty.length > 0) {
-                $('html,body').scrollTop(0);
                 message = "Please fill out these fields: \n" + empty.join(", ");                
                 alert(message);
                 return false;
