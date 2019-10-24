@@ -19,54 +19,8 @@
       width: auto;
       padding-left: 10%;
     }
-
-    .btn1 {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      background-color: #e699ff;
-      color: white;
-      font-size: 16px;
-      padding: 12px 24px;
-      border: none;
-      cursor: pointer;
-      border-radius: 5px;
-    }
-
-   .btn2 {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-400%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      background-color: #e699ff;
-      color: white;
-      font-size: 16px;
-      padding: 12px 24px;
-      border: none;
-      cursor: pointer;
-      border-radius: 5px;
-    }
-
-   .btn3 {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(245%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      background-color: #e699ff;
-      color: white;
-      font-size: 16px;
-      padding: 12px 24px;
-      border: none;
-      cursor: pointer;
-      border-radius: 5px;
-    }
-
-    .btn: hover {
-      background-color: #ac00e6;
+    #bookclass:hover {
+      opacity: 0.5;
     }
 
     .column {
@@ -98,31 +52,34 @@
     </ul>
   </nav>
 
-    <h2 style="font-family: 'Flamenco'; color: white; text-decoration: underline; font-size: 90px; text-align: center; opacity: 0.9; text-shadow: 2px 2px black;">
-      
-   Events
+    <h2 style="font-family: 'Flamenco'; color: white; text-decoration: underline; font-size: 90px; text-align: center; opacity: 0.9; text-shadow: 2px 2px black;">Events</h2>
 
-    </h2>
-
-    <div class="row">
+    <div class="row" style="padding-left: 5%">
       <div class="column">
         <img id="bookclass" src="https://images.unsplash.com/photo-1501443762994-82bd5dace89a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80">
-        <button class=btn1>Book Classes</button>
       </div>
       <div class="column">
         <img id="bookclass" src="https://images.unsplash.com/photo-1511559714511-3181c09c1cb0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80">
-        <button class=btn2>On-the-Go</button>
       </div>
       <div class="column">
-        <img id="bookclass" src="https://images.unsplash.com/photo-1501443762994-82bd5dace89a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80">
-        <button class=btn3>Birthday Parties</button>
+        <img id="bookclass" src="https://images.unsplash.com/photo-1563252781-2f76e089e889?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
       </div>
     </div>
-
+ 
   </div>
 
+  <script language="javascript">
 
-
-  <!-- do classes, birthday parties, after hours space bookings -->
+    $(document).ready(function() {
+      $('#bookclass').click(function() {
+        $('#bookclass').append("<h1>It worked chaps</h1>");
+      });
+    });
+    $('#bookclass').hover( function(){
+        $('#bookclass').show().offset($(this).offset());
+    }, function(){
+        $('#bookclass').hide();
+    });
+  </script>
 
 </body>
