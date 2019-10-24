@@ -60,6 +60,7 @@
     nav ul {list-style-type:none;}
     nav ul li {display: inline-block; padding: 10px 25px 10px 25px; line-height: 1.5; font-family: 'Flamenco'; font-size: 14pt;}
     .button {background-color: #000; color: #fff; display: inline-block; padding: 4px 15px; border: none;}
+  
   #center-menu{
     text-align: center; 
     vertical-align: center;
