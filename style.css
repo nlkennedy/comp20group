@@ -5,6 +5,14 @@
       border: 0;
     }
 
+    h1{
+      font-family: Flamenco;
+      text-decoration: bold;
+      font-size: 32pt;
+      text-shadow: 2px 2px #FF1DCE;
+      line-height: 0.5;
+    }
+
     h2{
       color:#ECECEC;
     }
@@ -55,16 +63,16 @@
     }
 
      /* nav bar styling*/
-    nav {background-color: #ECECEC; padding: 15px 0px;}
+    nav {background-color: #ECECEC; padding: 15px 0px; }
     nav a {color: #000; font-size: 19px; text-decoration: none;}
     nav ul {list-style-type:none;}
-    nav ul li {display: inline-block; padding: 10px 25px 10px 25px; line-height: 1.5; font-family: 'Flamenco'; font-size: 14pt;}
+    nav ul li {display: inline-block; padding: 5px 25px 5px 5px; line-height: 0.5; font-family: 'Flamenco'; font-size: 14pt;}
     .button {background-color: #000; color: #fff; display: inline-block; padding: 4px 15px; border: none;}
   
-  #center-menu{
-    text-align: center; 
-    vertical-align: center;
-  }
+    #center-menu{
+      text-align: center; 
+      vertical-align: center;
+    }
 
    /* footer styling */
     footer {background-color: #ECECEC;}
