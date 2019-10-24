@@ -49,14 +49,28 @@
       background-size: 100%;
     }
 
-     /* nav bar and search button styling*/
+     /* nav bar styling*/
     nav {background-color: #5da2d5; padding: 15px 0px;}
     nav a {color: #fff; font-size: 19px; text-decoration: none;}
     nav ul {list-style-type:none;}
-    nav ul li {display: inline-block; padding: 10px 25px 10px 25px; line-height: 2; font-family: 'Flamenco'; font-size: 14pt;}
+    nav ul li {display: inline-block; padding: 10px 25px 10px 25px; line-height: 1.5; font-family: 'Flamenco'; font-size: 14pt;}
     .button {background-color: #000; color: #fff; display: inline-block; padding: 4px 15px; border: none;}
   #center-menu{
     text-align: center; 
     vertical-align: center;
   }
+
+   /* footer styling */
+    footer {background-color: #5da2d5;}
+    footer a {color: #fff; font-size: 14px; text-decoration: none;}
+    footer ul {list-style-type:none;}
+    footer ul li {display: inline-block; padding: 10px 25px 10px 25px; line-height: 0.2; font-family: 'Flamenco'; font-size: 14pt;}
+
+    footer{
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+  }
+
  
