@@ -6,7 +6,6 @@
   <link href="https://fonts.googleapis.com/css?family=Asap&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Chivo&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css">
 
   <style> 
@@ -21,7 +20,7 @@
     }
 
     h2 {
-        color: #FC4A1A;
+        color: #5DA2D5;
         font-family: 'Flamenco', cursive;
         font-size: 24px;
         margin-right: 50px;
@@ -44,9 +43,10 @@
     }
 
     img {
-      padding-top: 50px;
-      width: 50%;
+      width: 100%;
       height: auto;
+      border: #fff 3px solid;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     }
 
     hr {
@@ -57,12 +57,14 @@
     }
     .column {
       float: left;
-      width: 33.333333%;
+      width: 50%;
       padding: 0 8px;
+      margin: auto;
     }
 
     .row {
       width: 100%;
+      margin: auto;
       content: "";
       display: table;
       clear: both;
@@ -71,6 +73,14 @@
 
     * {
       box-sizing: border-box;
+    }
+
+    .centered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 70%;
+      transform: translate(-50%, -50%);
     }
   </style>
 
@@ -93,8 +103,23 @@
       Our Story
     </h2>
 
-        <div class="row" style="padding: 30px 0 30px 0;"> <img src="Ourstory-photos/employees.jpg" alt="Employees" style="width: 70%; height: auto; padding-top: 0; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);"> </div>
+        <div class="row" style="padding: 30px 0 30px 0;"> <img src="Ourstory-photos/employees.jpg" alt="Employees" style="width: 70%; height: auto; padding-top: 0;"> </div>
         <div class="row" style="background-color: #E6E6E6; width: 70%; text-align: center; margin: auto; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);"> <p style="color: #000;"> Hi! We're Jen and Berry's. I know what you might be thinking–no way! I love Ben and Jerry's, but our names are <i>actually</i> Jen and Berry! We work tirelessly each day to deliver the best quality, most delicious tasting ice cream on the market. </p>  </div>
+
+
+        <div class="row" style="padding: 30px 0 30px 0; text-align: center; width: 70%">
+            <div class="column" style="padding: 0 8px 0 0; position: relative;"> <a href="press.html"> <img src="Ourstory-photos/newspaper.jpg" alt="Newspaper" class="img"> </a>
+                <a href="press.html"> <div class="centered" style="background-color: #fff"><h2>See Where We've Been Mentioned</h2></div> </a>
+            </div>
+            <div class="column" style="padding: 0 0 0 8px; position: relative;"> <a href="menu.html"> <img src="Ourstory-photos/flavors.jpg" alt="Flavors" class="img"> </a>
+                <a href="menu.html"> <div class="centered" style="background-color: #fff"><h2 style="color: #F78888">Check Out Our Menu</h2></div> </a>
+            </div>
+        </div>
+
+        <div class="row" style= "text-align: center; width: 70%">
+            <div class="column" style="background-color: #E6E6E6; width: 33.3333%; height: 100%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);"> <p style="color: #000;"> <b style="text-decoration: underline"> Call Us!</b> <br />33-ICE-CREAM! <br /> <br /> <b style="text-decoration: underline;">Meet Us!</b> <br /> 33 Rocky Road, NYC, NY 10005 </p></div>
+            <div class="column" style="width: 66.6666%; height: auto; padding: 0 0 0 16px"> <img src="Ourstory-photos/Parlor.jpg" alt="Ice Cream Parlor" class="img"> </div> 
+        </div>
 
         <br /><br /><br /><br /><br />
 
