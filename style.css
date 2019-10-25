@@ -9,12 +9,13 @@
       font-family: Flamenco;
       text-decoration: bold;
       font-size: 32pt;
-      text-shadow: 2px 2px #FF1DCE;
+      text-shadow: 4px 4px #FFC2C8;
       line-height: 0.5;
     }
 
     h2{
       color:#ECECEC;
+
     }
     
     body {
