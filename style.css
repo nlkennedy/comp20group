@@ -65,29 +65,63 @@
       background-size: 100%;
     }
 
-     /* nav bar styling*/
-    nav {background-color: #ECECEC; padding: 15px 0px; }
-    nav a {color: #000; font-size: 19px; text-decoration: none;}
-    nav ul {list-style-type:none;}
-    nav ul li {display: inline-block; padding: 10px 25px 5px 25px; font-family: 'Flamenco'; font-size: 14pt;}
-    .button {background-color: #000; color: #fff; display: inline-block; padding: 4px 15px; border: none;}
-  
-    #center-menu{
-      text-align: center; 
-      vertical-align: center;
-    }
 
-   /* footer styling */
-    footer {background-color: #ECECEC;}
-    footer a {color: #000; font-size: 14px; text-decoration: none;}
-    footer ul {list-style-type:none;}
-    footer ul li {display: inline-block; padding: 10px 25px 10px 25px; line-height: 0.2; font-family: 'Flamenco'; font-size: 14pt;}
 
-    footer{
-      text-align: center;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
+  /* HEADER AND FOOTER */
+
+  .main-logo img {width:3%;}
+  .fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  .header {
+    overflow: hidden;
+    z-index: 9999;
+  }
+  .sticky {
+    position: sticky;
+    top: 0;
+  }
+  .header a:hover {
+    color: #000;
+    text-decoration: underline;
   }
 
+  .header a.active {
+    background-color: #FFC2C8;
+    color: #000;
+    padding: 12px 12px 12px 12px;
+    border-radius: 70px;
+  }
+  span{
+    border:2px #000 solid;
+    padding: 15px 15px 15px 15px;
+    border-radius: 40px;
+  }
+
+   /* nav bar styling*/
+  nav {background-color: #ECECEC; padding: 15px 0px; }
+  nav a {color: #000; font-size: 19px; text-decoration: none;}
+  nav ul {list-style-type:none;}
+  nav ul li {display: inline-block; padding: 10px 25px 5px 25px; font-family: 'Flamenco'; font-size: 14pt;}
+  .button {background-color: #000; color: #fff; display: inline-block; padding: 4px 15px; border: none;}
+
+  #center-menu{
+    text-align: center; 
+    vertical-align: center;
+  }
+
+ /* footer styling */
+  footer {background-color: #ECECEC;}
+  footer a {color: #000; font-size: 14px; text-decoration: none;}
+  footer ul {list-style-type:none;}
+  footer ul li {display: inline-block; padding: 10px 25px 10px 25px; line-height: 0.2; font-family: 'Flamenco'; font-size: 14pt;}
+
+  footer{
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
  
