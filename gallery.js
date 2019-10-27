@@ -1,7 +1,9 @@
+// initialize variables & set captions 
 var slide_index = 0;
 var num_slides = 8;
 var captions = ["Caramel Cone", "Mint in a Cup", "Strawberry Cone", "Orange Sherbet", "Twin Strawberry Cones", "Oreo Sundae", "Rasberry Cone", "Sprinkles Cone"];
 
+// after page load, initialize slideshow and set effects 
 $(document).ready(function() {
     show_slide(slide_index);
 
@@ -16,7 +18,7 @@ $(document).ready(function() {
     });
 });
 
-// move slideshow by n
+// move slideshow by n slides 
 function move_slide(n) {
     slide_index = image_index(slide_index += n);
     show_slide(slide_index);
@@ -36,6 +38,7 @@ function image_index(i) {
 // show a new set of three slides
 function show_slide(n) {
     for (i = 0; i < 3; i++) {
+        // convert to valid slideshow index 
         index = image_index(slide_index + i);
 
         // update slideshow number
