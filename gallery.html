@@ -18,6 +18,10 @@
             font-family: 'Flamenco', cursive;
         }
 
+        h1{
+            color: #000!important;
+        }
+
         body {
             text-align: center;
             box-sizing: border-box;
@@ -97,18 +101,25 @@
     <script language="javascript" src="gallery.js"></script>
 </head>
 <body>
-      <!--  nav bar and search button --> 
+<!--  header and nav bar  --> 
+  <div class="sticky header">
   <nav id="center-menu">
     <ul>
+      <li> <h1> <span>JEN & BERRY'S</span> </h1> <li>
+
+    </ul>
+
+    <ul>
       <li><a href="index.html">HOME</a></li>
-      <li><a href="events.html">EVENTS </a></li>
-      <li><a href="gallery.html">GALLERY</a></li>
       <li><a href="menu.html">MENU</a></li>
+      <li><a href="events.html">EVENTS </a></li>
+      <li><a class="active" href="gallery.html">GALLERY</a></li>
       <li><a href="press.html">PRESS</a></li>
       <li><a href="ourstory.html">OUR STORY</a></li>
       <li><a href="contact.html">CONTACT US</a></li>
     </ul>
   </nav>
+</div>
 
     <h2 style="font-family: 'Flamenco'; color: white; text-decoration: underline; font-size: 90px; text-align: center; opacity: 0.9; text-shadow: 2px 2px black;">   
     Gallery
@@ -143,5 +154,15 @@
 
     </br>
 
+  <!--  footer  --> 
+  <div style="height: 100px"> </div>
+  <footer id="center-menu">
+    <ul>
+      <li><a>   &copy; Copyright 2019 by nobody. All rights reserved. </a></li>
+      <li><a>Call us at 33-ICE-CREAM!</a></li>
+      <li><a>333 Rocky Road, NYC, NY 10005</a></li>
+    </ul>
+  </footer>
+  
 </body>
 </html>
