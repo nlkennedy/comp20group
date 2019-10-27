@@ -9,19 +9,18 @@
 
 <meta charset="utf-8">
 
-  <title style="font-family: 'Open Sans', sans-serif">Welcome to Jen & Berry's</title>
+  <title>Welcome to Jen & Berry's</title>
   <style>
-    html,body { height:120%; }
+    html,body { height:116%; }
     .column1 {
       float: left;
-      height: 180%;
-      width: 32%;
+      width: 28%;
       margin-left: 3%;
+      height:33vw;
     }
     .column2 {
-      float: right;
-      width: 62%;
-      height: 35vw;
+      float: left;
+      width: 66%;
       margin-right: 3%;
     }
     .row:after {
@@ -65,18 +64,21 @@
 
 
     <h2 style="font-family: 'Open Sans'; color: white; text-decoration: underline; font-size: 90px; text-align: center; opacity: 0.9; text-shadow: 2px 2px black;">
+      
     Welcome to Jen & Berry's
+
     </h2>
 
 
     <div class="row">
       <div class="column1">
-        <img id="home_img" src = "https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80" style="height: 35vw; width: auto; opacity:0.92">
+        <img id="home_img" src = "https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80" style="height: 100%; width: 100%; opacity:0.92">
       </div>
       <div class="column2" style="background-color: #ffb3e6; opacity: 0.92">
-        <h3 style="font-family: 'Open Sans', sans-serif; font-weight: lighter; color: white;font-size: 5vw; text-align: center">
+        <br \>
+        <h3 style="font-family: 'Open Sans', sans-serif; font-weight: lighter; color: white;font-size: 4vw; text-align: center">
         PICK A CONE</h3>
-        <h4 style="font-family:'Open Sans', sans-serif; font-weight: lighter; color: white;font-size: 2.7vw; text-align: center; padding-left:3%; padding-right: 3%"> We offer a variety
+        <h4 style="font-family:'Open Sans', sans-serif; font-weight: lighter; color: white;font-size: 2.5vw; text-align: center; padding-left:3%; padding-right: 3%"> We offer a variety
         of treats, each made from the highest quality ingredients sourced from all over the globe.
         There's something special in every cup, cone, and bite. </h4>
       </div>
@@ -100,12 +102,10 @@
     $(document).ready(function() {
       resize_container();
     })
-
     // resize containers on change in window size
     $(window).resize(function(){
       resize_container();
     });
-
     // resize text box to be same height of image 
     function resize_container() {
       img_height = $("#home_img").height();
