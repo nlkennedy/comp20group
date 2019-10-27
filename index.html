@@ -15,13 +15,13 @@
     html,body { height:116%; }
     .column1 {
       float: left;
-      width: 32%;
+      width: 28%;
       margin-left: 3%;
+      height:33vw;
     }
     .column2 {
       float: left;
-      width: 62%;
-      height:150vw;
+      width: 66%;
       margin-right: 3%;
     }
     .row:after {
@@ -73,13 +73,13 @@
 
     <div class="row">
       <div class="column1">
-        <img id="home_img" src = "https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80" style="height: 150vw; width: auto; opacity:0.92">
+        <img id="home_img" src = "https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80" style="height: 100%; width: 100%; opacity:0.92">
       </div>
       <div class="column2" style="background-color: #ffb3e6; opacity: 0.92">
         <br \>
-        <h3 style="font-family: 'Open Sans', sans-serif; font-weight: lighter; color: white;font-size: 5vw; text-align: center">
+        <h3 style="font-family: 'Open Sans', sans-serif; font-weight: lighter; color: white;font-size: 4vw; text-align: center">
         PICK A CONE</h3>
-        <h4 style="font-family:'Open Sans', sans-serif; font-weight: lighter; color: white;font-size: 2.7vw; text-align: center; padding-left:3%; padding-right: 3%"> We offer a variety
+        <h4 style="font-family:'Open Sans', sans-serif; font-weight: lighter; color: white;font-size: 2.5vw; text-align: center; padding-left:3%; padding-right: 3%"> We offer a variety
         of treats, each made from the highest quality ingredients sourced from all over the globe.
         There's something special in every cup, cone, and bite. </h4>
       </div>
@@ -103,12 +103,10 @@
     $(document).ready(function() {
       resize_container();
     })
-
     // resize containers on change in window size
     $(window).resize(function(){
       resize_container();
     });
-
     // resize text box to be same height of image 
     function resize_container() {
       img_height = $("#home_img").height();
