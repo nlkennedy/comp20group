@@ -38,6 +38,8 @@
             border-radius: 5px;
             margin-bottom: 5%;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            font-size: 15px;
+            font-size: 1.25vw;
         }
 
         textarea, select, input {
@@ -49,10 +51,12 @@
             border-radius: 4px;
             resize: none;
             font-size: 15px;
+            font-size: 1.25vw;
         }
 
         .dropdown {
             font-size: 15px;
+            font-size: 1.25vw;
             background-color: #ffffff;
         }
 
@@ -65,6 +69,7 @@
             cursor: pointer;
             font-family: 'Flamenco', cursive;
             font-size: 110%;
+            font-size: 1.5vw;
             font-weight: bold;
             border-color: #ffffff;
         }
@@ -91,11 +96,16 @@
             margin-bottom: 2%;
             color: #000000;
         }
+
+        p {
+            font-size: 16px;
+            font-size: 1.5vw;
+        }
     </style>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Flamenco&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
   <!--  header and nav bar  --> 
@@ -162,6 +172,7 @@
   </footer>
 
     <script>
+        // if form is valid on submit, show confirmation message
         function submit_event() {
             if (validate_form()) {
                 form = document.forms[0];
@@ -177,18 +188,21 @@
             }
         }
 
+        // validate form 
         function validate_form() {
             fields = ["name", "phone", "email", "comments"];
             field_labels = ["Name", "Phone Number", "Email", "Message"];
             form = document.forms[0];
             empty = new Array;
 
+            // check that all fields are filled out 
             for (i in fields) {
                 if (form[fields[i]].value == "") {
                     empty.push(field_labels[i]);
                 }
             }
 
+            // alert on which fields aren't filled out
             if (empty.length > 0) {
                 message = "Please fill out these fields: \n" + empty.join(", ");                
                 alert(message);

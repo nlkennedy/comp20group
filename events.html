@@ -6,27 +6,15 @@
   <link href="https://fonts.googleapis.com/css?family=Asap&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css">
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-  <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap" rel="stylesheet">
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jen & Berry's: Events</title>
   
   <style>
     .container {
       position: relative;
       width: 50%;
-    }
-
-    .title {
-      font-family: 'Flamenco';
-      color: white;
-      text-decoration: underline;
-      font-size: 5vw;
-      text-align: center;
-      opacity: 0.7;
-      text-shadow: 2px 2px black;
-      margin-top:70px;
-      margin-bottom:25px;
     }
 
     .description {
@@ -41,7 +29,8 @@
       vertical-align: middle;
       padding-left:25px;
       padding-right: 25px;
-      line-height: 50px; 
+      padding-top: 1%;
+      padding-bottom: 1%;
       margin: auto;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     }
@@ -57,10 +46,10 @@
       vertical-align: middle;
       padding-left:25px;
       padding-right: 25px;
-      line-height: 50px; 
+      padding-top: 1%;
+      padding-bottom: 1%;
       margin: auto;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-
     }
 
     #bookclass {
@@ -78,11 +67,24 @@
       display: table;
       clear: both;
     }
+    
+    .title {
+      font-family: 'Flamenco';
+      color: white;
+      text-decoration: underline;
+      font-size: 5vw;
+      text-align: center;
+      opacity: 0.7;
+      text-shadow: 2px 2px black;
+      margin-top:70px;
+      margin-bottom:25px;
+    }
 
   </style>
 </head>
 
 <body>
+  
   <!--  header and nav bar  --> 
   <div class="sticky header">
     <nav id="center-menu">
@@ -101,12 +103,12 @@
     </nav>
   </div>
 
-
-  <div style="padding-top:30px; padding-bottom:50px">
+  <div style="padding-top:2%; padding-bottom:2%">
     <h3 class="intro" style="opacity: 1; color:black; font-size:1.4vw">
       We specialize in fun events for any age! Come to us for a birthday party, happy hour, or catering event so special that no one will forget it.</h3>
   </div>
 
+  <!--  row of event images   -->
   <div class="row" style="padding-left: 5%; padding-bottom:18vw">
     <div class="column">
       <img id="bookclass" src="https://images.unsplash.com/photo-1501443762994-82bd5dace89a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80">
@@ -118,7 +120,6 @@
       <img id="bookclass" src="https://images.unsplash.com/photo-1563252781-2f76e089e889?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
     </div>
   </div>
-
 
   <div>
     <h3 class="description" style="color:black; font-size:1.4vw">Book events, catering, and more by <a href="contact.html">contacting us</a>!</h3>
@@ -133,6 +134,5 @@
       <li><a>333 Rocky Road, NYC, NY 10005</a></li>
     </ul>
   </footer>
-
 
 </body>
