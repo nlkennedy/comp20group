@@ -1,3 +1,5 @@
+// JavaScript for gallery.html
+
 // initialize variables & set captions 
 var slide_index = 0;
 var num_slides = 8;

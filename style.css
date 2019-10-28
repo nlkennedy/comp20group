@@ -5,7 +5,7 @@
       border: 0;
     }
 
-    h1{
+    h1 {
       font-family: Flamenco;
       text-decoration: bold;
       font-size: 24pt;
@@ -24,6 +24,7 @@
     body {
       background-color: #FFC2C8;
     }
+
     .container {
       position: relative;
       width: 50%;
@@ -58,6 +59,7 @@
     .container .btn:hover {
       background-color: black;
     }
+
     .parallax { 
       height: 100%;
       background-attachment: fixed;
@@ -65,8 +67,6 @@
       background-repeat: no-repeat;
       background-size: 100%;
     }
-
-
 
   /* HEADER AND FOOTER */
 
@@ -76,14 +76,17 @@
     top: 0;
     left: 0;
   }
+
   .header {
     overflow: hidden;
     z-index: 9999;
   }
+
   .sticky {
     position: sticky;
     top: 0;
   }
+  
   .header a:hover {
     color: #000;
     text-decoration: underline;
